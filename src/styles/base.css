@@ -1,0 +1,19 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-top: 1rem; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: var(--leading);
+  background: var(--bg);
+  color: var(--text);
+}
+h1, h2, h3 { margin: 0; font-family: var(--font-heading); font-weight: 600; line-height: 1.15; color: var(--heading); }
+h1 { font-size: var(--text-h1); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+p { margin: 0; }
+a { color: var(--link); }
+img { max-width: 100%; }
+:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }

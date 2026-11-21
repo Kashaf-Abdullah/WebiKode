@@ -1,0 +1,48 @@
+/* Reusable building blocks */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+  min-height: var(--tap); padding: 0 var(--space-5);
+  background: var(--accent); color: var(--on-accent);
+  border: 2px solid var(--accent); border-radius: var(--radius-pill);
+  font: 600 1rem var(--font-body); text-decoration: none; cursor: pointer;
+}
+.btn--outline { background: transparent; color: var(--outline); border-color: var(--outline); }
+.btn--light { background: var(--color-ivory); color: var(--color-carafe); border-color: var(--color-ivory); }
+.btn--sm { min-height: 44px; padding: 0 var(--space-4); font-size: 0.9375rem; }
+
+.card { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-5); background: var(--surface); border-radius: var(--radius-lg); }
+.tile { height: 160px; border-radius: var(--radius-md); background: var(--tile-1); }
+.tile--2 { background: var(--tile-2); }
+.tile--3 { background: var(--tile-3); }
+.tile--icon { width: 48px; height: 48px; }
+.tag { font-size: var(--text-sm); font-weight: 600; color: var(--link); }
+.muted { font-size: var(--text-sm); }
+
+.grid { display: grid; gap: var(--space-5); }
+.grid--3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.grid--4 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+.row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+.row--between { justify-content: space-between; }
+
+.chip {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--space-4);
+  background: transparent; color: var(--outline); border: 2px solid var(--outline);
+  border-radius: var(--radius-pill); font: 600 1rem var(--font-body); cursor: pointer;
+}
+.chip[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+
+.field { display: flex; flex-direction: column; gap: var(--space-1); font-weight: 600; color: var(--heading); }
+.field input, .field textarea, .field select, .search input {
+  font: 400 1rem var(--font-body); color: var(--text); background: var(--field-bg);
+  border: 2px solid var(--field-border); border-radius: var(--radius-sm); padding: var(--space-3) var(--space-4); min-height: var(--tap);
+}
+.check { display: flex; align-items: center; gap: var(--space-3); min-height: 32px; }
+.check input { width: 20px; height: 20px; accent-color: var(--accent); }
+
+.search { display: flex; flex-wrap: wrap; gap: var(--space-3); width: 100%; max-width: 720px; }
+.search input { flex: 1; min-width: 220px; border-radius: var(--radius-pill); padding: 0 var(--space-5); min-height: 56px; }
+
+.faq-list { display: flex; flex-direction: column; gap: var(--space-4); }
+.faq-list details { background: var(--surface); border-radius: var(--radius-md); padding: var(--space-4) var(--space-5); }
+.faq-list summary { font-weight: 600; font-size: var(--text-lg); color: var(--heading); cursor: pointer; }
+.faq-list p { margin-top: var(--space-3); }

@@ -1,0 +1,6 @@
+.hero { display: flex; flex-direction: column; align-items: center; gap: var(--space-5); text-align: center; padding-block: var(--section-y); }
+.hero h1 { max-width: 860px; }
+.hero__lead { max-width: 640px; }
+.builder { display: grid; gap: var(--space-5); grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); align-items: start; }
+.stack { display: flex; flex-direction: column; gap: var(--space-4); }
+.newsletter { align-items: center; text-align: center; padding: var(--space-7) var(--gutter); }
