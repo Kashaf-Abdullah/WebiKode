@@ -1,0 +1,4 @@
+ChatGenie
+Live URL: https://chatgenie-web-platform.vercel.app/
+
+A fast, intelligent conversational web platform engineered for real-time messaging, structured Q&A workflows, and instant user assistance. Features clean threaded discussions and quick-action prompts that keep communication effortless.

@@ -1,0 +1,4 @@
+EduTech Platform
+Live URL: https://edutech-platform-tech.vercel.app/
+
+An interactive digital classroom and learning management platform that organizes video courses, structured syllabi, and student progress in one place. Engineered for distraction-free lessons, assignment tracking, and measurable academic growth.

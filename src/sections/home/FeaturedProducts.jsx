@@ -1,20 +1,12 @@
-import { useState } from 'react';
 import Section, { SectionHeader } from '../../components/ui/Section.jsx';
 import ProductCard from '../../components/ProductCard.jsx';
-import { PRODUCT_TABS, PRODUCTS } from '../../data/products.js';
+import { PORTFOLIO_ITEMS } from '../../data/products.js';
 
 export default function FeaturedProducts() {
-  const [tab, setTab] = useState(PRODUCT_TABS[0].id);
-  const items = PRODUCTS.filter((p) => p.collections.includes(tab));
   return (
     <Section id="featured">
-      <SectionHeader eyebrow="Featured" title="Featured products" />
-      <div className="row" style={{ marginBottom: 'var(--space-6)' }}>
-        {PRODUCT_TABS.map(({ id, label }) => (
-          <button key={id} type="button" className="chip" aria-pressed={tab === id} onClick={() => setTab(id)}>{label}</button>
-        ))}
-      </div>
-      <div className="grid grid--4">{items.map((p) => <ProductCard key={p.id} product={p} />)}</div>
+      <SectionHeader eyebrow="Featured" title="Featured projects" text="Explore a selection of web applications built for learning, communication, productivity and personal finance." />
+      <div className="grid grid--3">{PORTFOLIO_ITEMS.map((project) => <ProductCard key={project.slug} product={project} />)}</div>
     </Section>
   );
 }

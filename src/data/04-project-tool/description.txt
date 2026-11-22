@@ -1,0 +1,4 @@
+Project Management Tool
+Live URL: https://project-mangement-tool-tech.vercel.app/
+
+A collaborative workspace for organizing tasks, Kanban boards, and delivery timelines across fast-moving product teams. Helps managers and contributors track milestones, set priorities, and move work from backlog to launch.

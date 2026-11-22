@@ -1,0 +1,4 @@
+Personal Expense & Finance Tracker
+Live URL: https://personal-finance-and-expense-tracker.vercel.app/login
+
+A secure personal finance web app for logging daily expenses, categorizing income streams, and monitoring monthly budget health. Visualizes spending trends with clear analytics so users can build smarter saving habits.

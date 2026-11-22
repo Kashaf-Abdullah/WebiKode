@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PageHero from '../components/PageHero.jsx';
-import { Card, Tile } from '../components/ui/Card.jsx';
+import ProductCard from '../components/ProductCard.jsx';
 import { PORTFOLIO_FILTERS, PORTFOLIO_ITEMS } from '../data/products.js';
 
 export default function Portfolio() {
@@ -14,7 +14,7 @@ export default function Portfolio() {
           {PORTFOLIO_FILTERS.map((f) => <button key={f} type="button" className="chip" aria-pressed={filter === f} onClick={() => setFilter(f)}>{f}</button>)}
         </div>
         <div className="grid grid--3">
-          {items.map((i) => <Card key={i.id}><Tile tone={i.tone} /><span className="tag">{i.category}</span><h3>{i.name}</h3><p>{i.description}</p></Card>)}
+          {items.map((i) => <ProductCard key={i.slug} product={i} />)}
         </div>
       </div>
     </>
